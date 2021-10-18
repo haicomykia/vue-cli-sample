@@ -1,21 +1,21 @@
 <template>
-  <input type="text" v-model="msg">
-  <p>{{msg}}</p>
+  <input type="text" v-model="msg" />
+  <p>{{ msg ?? "Input anything." }}</p>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      msg: "上原歩夢"
-    }
+      msg: null,
+    };
   },
-}
+};
 </script>
 
 <style scoped>
-  p {
-    font-size: 2rem;
-    color:#FFB6C1;
-  }
+p {
+  font-size: 2rem;
+  color: #ffb6c1;
+}
 </style>
